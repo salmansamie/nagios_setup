@@ -7,7 +7,7 @@ apt-get upgrade -y
 apt-get dist-upgrade -y
 apt-get autoremove -y
 apt-get install build-essential libgd2-xpm-dev openssl libssl-dev apache2-utils apache2 php5 -y
-apt-get install wget build-essential apache2 php apache2-mod-php7.0 php-gd libgd-dev sendmail unzip -y
+apt-get install wget php apache2-mod-php7.0 php-gd libgd-dev sendmail unzip -y
 dd if=/dev/zero of=/swap bs=1024 count=2097152
 mkswap /swap && sudo chown root. /swap && sudo chmod 0600 /swap && sudo swapon /swap
 sh -c "echo /swap swap swap defaults 0 0 >> /etc/fstab"
